@@ -16,5 +16,6 @@ namespace CaseStudy.Models
         public Account Account { get; set; }
         public Address Address { get; set; }
         public Rating Rating { get; set; }
+          public IEnumerable<CropDetail> CropDetails { get; set; }  = null!;
 }
 }

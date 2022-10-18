@@ -9,6 +9,8 @@ namespace CaseStudy.Models
         public DbSet<Account> Accounts { get; set; } = null!;
         public DbSet<Role> Roles { get; set; } = null!;
         public DbSet<Rating> Ratings { get; set; } = null!;
+         public DbSet<CropType> CropTypes { get;set;}= null!;
+        public DbSet<CropDetail>  CropDetails { get;set;}= null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
