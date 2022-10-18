@@ -22,6 +22,8 @@ builder.Services.AddDbContext<DatabaseContext>();
 
 builder.Services.AddScoped<IRegisterRepository, RegisterRepository>();
 builder.Services.AddScoped<RegisterService,RegisterService>();
+builder.Services.AddScoped<ICropRepository, CropRepository>();
+builder.Services.AddScoped<CropService, CropService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
     options =>

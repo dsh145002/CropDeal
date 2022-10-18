@@ -14,7 +14,7 @@ namespace CaseStudy.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"data source=.\sqlexpress;database=model;integrated security=SSPI");
+            optionsBuilder.UseSqlServer(@"data source=.\sqlexpress;database=cropDealDb;integrated security=SSPI");
             base.OnConfiguring(optionsBuilder);
         } 
     }
